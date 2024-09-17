@@ -25,6 +25,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost/antrianci3/client/';
 
+//setting 
+$config['base_url_api'] = 'http://localhost/antrianptbjm/';
+$config['printer_name'] = 'POS-58';
+
+// Perintah untuk menjalankan script Python
+$config['python_script'] = 'C:/Users/ecourt/Documents/pos-printer-python/printer3.py';
+$config['python_path'] = 'C:/Users/ecourt/AppData/Local/Programs/Python/Python312/python.exe';
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Index File
