@@ -18,7 +18,7 @@
     <ul class="menu-inner py-1">
         <br><br>
         <li class="menu-item <?=$link=='ambil_antrian'?'active':''?>">
-            <a href="<?=base_url()?>ambil_antrian" class="menu-link">
+            <a href="<?=base_url()?>" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-calendar-alt"></i>
                 <div data-i18n="Analytics">Ambil Antrian</div>
             </a>
