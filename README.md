@@ -8,6 +8,8 @@ Aplikasi antrian merupakan aplikasi yang dibuat untuk tujuan manajemen antrian p
 - MySql
 - Nodejs V16
 - Python V3
+- Xampp atau Laragon
+- Google Chrome (Wajib)
 
 *Sebelum melakukan install aplikasi, silahkan pastikan printer thermal sudah terinstall dan sudah ditesting dapat melakukan print tanpa aplikasi ini.
 
@@ -17,3 +19,23 @@ Aplikasi ini terbagi menjadi 3 bagian
 1. Server
 2. Client
 3. Pos-Printer-Python
+
+## 1. Server
+
+Aplikasi yang terdiri dari :
+
+- [Codeigniter 3] - HTML enhanced for web apps!
+- [Node JS] - awesome web-based text editor
+
+Silahkan copy folder server ke folder htdocs jika menggunakan xampp atau folder www jika menggunakan laragon anda juga bisa merename nama folder server menjadi yang anda inginkan.
+Setelah ini ikuti langkah berikut ini:
+1. Ubah base url pada file yang berada application/config/config.php, sesuaikan dengan base url yang anda inginkan, biasanya mengikuti nama folder 
+2. Ubah konfigurasi database pada file yang berada  application/config/database.php, sesuaikan dengan konfigurasi host, user, password, dan nama database
+3. Import file database.sql yang berada di folder antrianci3/database/database.sql ke database anda
+4. Buka terminal lakukan perintah `npm install`
+5. masih dalam terminal lakukan perintah `node server.js` jika menggunakan pm2 lakukan perintah `pm2 start server.js`
+6. Buka browser silahkan akses base url yang sudah di setting sebelum nya, misal nya di sini http://localhost/server/
+7. Pastikan node js juga berjalan dengan baik
+
+
+## 2. Client
