@@ -59,11 +59,29 @@ Dalam aplikasi ini untuk berkomunikasi dengan printer thermal pos, saya mengguna
 Setelah ini ikuti langkah berikut ini:
 1. Buka terminal dalam folder pos-printer-python lakukan perintah `pip install pywin32`
 
-##Screenshot
+## Screenshot
 
+1. halaman Login
 ![Alt Text](images/login.png)
+
+2. halaman ambil antrian
 ![Alt Text](images/ambil_antrian.png)
+
+3. halaman display antrian
 ![Alt Text](images/display_antrian.png)
+
+4. halaman panggilan
 ![Alt Text](images/panggilan.png)
+
+5. halaman set meja
 ![Alt Text](images/set_meja.png)
+
+6. halaman set user
 ![Alt Text](images/set_user.png)
+
+## Donasi
+Support saya untuk terus berbagi, dengan mendoakan saya dan keluarga selalu dalam keadaan sehat, diampuni dosa, dimurahkan rejeki, selamat dari siksa kubur, dimudahkan segala urusan, dijamin masuk surga. Amiiin
+
+Jika ingin berbagi sedikit rejeki berikut saya lampirkan akun dana saya 0816564142
+
+Terimakasih !
