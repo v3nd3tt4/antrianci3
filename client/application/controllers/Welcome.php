@@ -81,25 +81,25 @@ class Welcome extends CI_Controller {
 		$python_script = $this->config->item('python_script');
 		$python_path = $this->config->item('python_path');
 		var_dump($data);
-		// $command = escapeshellcmd("$python_path \"$python_script\" \"$printer_name\" \"$nomor_antrian\" \"$nama_meja\"");
+		$command = escapeshellcmd("$python_path \"$python_script\" \"$printer_name\" \"$nomor_antrian\" \"$nama_meja\"");
 
 
-		// // Debugging: tampilkan perintah yang dijalankan
-		// echo "<pre>Command to execute:\n$command\n</pre>";
+		// Debugging: tampilkan perintah yang dijalankan
+		echo "<pre>Command to execute:\n$command\n</pre>";
 
-		// // Menjalankan perintah
-		// exec($command . ' 2>&1', $output, $return_var);
+		// Menjalankan perintah
+		exec($command . ' 2>&1', $output, $return_var);
 
-		// // Menampilkan output dan kode keluar
-		// echo "<pre>Output:\n";
-		// print_r($output);
-		// echo "Return code: $return_var</pre>";
+		// Menampilkan output dan kode keluar
+		echo "<pre>Output:\n";
+		print_r($output);
+		echo "Return code: $return_var</pre>";
 
-		// // Menampilkan pesan error jika ada
-		// if ($return_var != 0) {
-		// 	echo "<pre>Error occurred:\n";
-		// 	echo implode("\n", $output);
-		// 	echo "</pre>";
-		// }
+		// Menampilkan pesan error jika ada
+		if ($return_var != 0) {
+			echo "<pre>Error occurred:\n";
+			echo implode("\n", $output);
+			echo "</pre>";
+		}
 	}
 }
