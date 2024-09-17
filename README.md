@@ -60,4 +60,10 @@ Setelah ini ikuti langkah berikut ini:
 1. Buka terminal dalam folder pos-printer-python lakukan perintah `pip install pywin32`
 
 ##Screenshot
+
 ![Alt Text](images/login.png)
+![Alt Text](images/ambil_antrian.png)
+![Alt Text](images/display_antrian.png)
+![Alt Text](images/panggilan.png)
+![Alt Text](images/set_meja.png)
+![Alt Text](images/set_user.png)
