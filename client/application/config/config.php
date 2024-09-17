@@ -23,15 +23,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/antrianci3/client/';
+$config['base_url'] = 'http://localhost/client/';
 
 //setting 
-$config['base_url_api'] = 'http://localhost/antrianptbjm/';
+$config['base_url_api'] = 'http://localhost/server/';
 $config['printer_name'] = 'POS-58';
 
 // Perintah untuk menjalankan script Python
-$config['python_script'] = 'C:/Users/ecourt/Documents/pos-printer-python/printer3.py';
-$config['python_path'] = 'C:/Users/ecourt/AppData/Local/Programs/Python/Python312/python.exe';
+$config['python_script'] = 'C:/Users/pilopa/Documents/pos-printer-python/printer3.py';
+$config['python_path'] = 'C:/Users/pilopa/AppData/Local/Programs/Python/Python312/python.exe';
 
 
 

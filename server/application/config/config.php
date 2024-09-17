@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $protocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-$base_url = $protocol . "://" . $_SERVER['HTTP_HOST'].'/antrianptbjm/';
+$base_url = $protocol . "://" . $_SERVER['HTTP_HOST'].'/server/';
 $config['base_url'] = $base_url;
 // $config['base_url'] = '';
 

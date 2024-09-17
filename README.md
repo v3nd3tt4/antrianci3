@@ -79,7 +79,7 @@ Setelah ini ikuti langkah berikut ini:
 6. halaman set user
 ![Alt Text](images/set_user.png)
 
-## Donasi
+## Penutup
 Support saya untuk terus berbagi, dengan mendoakan saya dan keluarga selalu dalam keadaan sehat, diampuni dosa, dimurahkan rejeki, selamat dari siksa kubur, dimudahkan segala urusan, dijamin masuk surga. Amiiin
 
 Jika ingin berbagi sedikit rejeki berikut saya lampirkan akun dana saya 0816564142
