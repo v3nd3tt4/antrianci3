@@ -24,8 +24,8 @@ Aplikasi ini terbagi menjadi 3 bagian
 
 Aplikasi yang terdiri dari :
 
-- [Codeigniter 3] - HTML enhanced for web apps!
-- [Node JS] - awesome web-based text editor
+- [Codeigniter 3] 
+- [Node JS]
 
 Silahkan copy folder server ke folder htdocs jika menggunakan xampp atau folder www jika menggunakan laragon anda juga bisa merename nama folder server menjadi yang anda inginkan.
 Setelah ini ikuti langkah berikut ini:
@@ -39,3 +39,25 @@ Setelah ini ikuti langkah berikut ini:
 
 
 ## 2. Client
+Aplikasi yang terdiri dari :
+1. Ubah base url pada file yang berada application/config/config.php, sesuaikan dengan base url yang anda inginkan, biasanya mengikuti nama folder 
+2. Silahkan ubah config di bawah ini yang berada application/config/config.php, sesuaikan dengan aplikasi anda
+3. Buka browser silahkan akses base url yang sudah di setting sebelum nya, misal nya di sini http://localhost/client/
+
+```sh
+//setting 
+$config['base_url_api'] = 'http://localhost/server/'; //sesuaikan dengan base url aplikasi server
+$config['printer_name'] = 'POS-58'; //sesuaikan nama printer anda
+
+// Perintah untuk menjalankan script Python
+$config['python_script'] = 'C:/Users/pilopa/Documents/pos-printer-python/printer3.py'; //lokasi aplikasi folder pos-printer-python
+$config['python_path'] = 'C:/Users/pilopa/AppData/Local/Programs/Python/Python312/python.exe'; //lokasi python
+```
+## 3. Pos-Printer-Python
+
+Dalam aplikasi ini untuk berkomunikasi dengan printer thermal pos, saya menggunakan python.
+Setelah ini ikuti langkah berikut ini:
+1. Buka terminal dalam folder pos-printer-python lakukan perintah `pip install pywin32`
+
+##Screenshot
+![Alt Text](images/login.png)
