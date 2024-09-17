@@ -85,21 +85,24 @@ class Welcome extends CI_Controller {
 
 
 		// Debugging: tampilkan perintah yang dijalankan
-		echo "<pre>Command to execute:\n$command\n</pre>";
+		// echo "<pre>Command to execute:\n$command\n</pre>";
 
 		// Menjalankan perintah
 		exec($command . ' 2>&1', $output, $return_var);
 
 		// Menampilkan output dan kode keluar
-		echo "<pre>Output:\n";
-		print_r($output);
-		echo "Return code: $return_var</pre>";
+		// echo "<pre>Output:\n";
+		// print_r($output);
+		// echo "Return code: $return_var</pre>";
 
 		// Menampilkan pesan error jika ada
 		if ($return_var != 0) {
-			echo "<pre>Error occurred:\n";
-			echo implode("\n", $output);
-			echo "</pre>";
+			// echo "<pre>Error occurred:\n";
+			// echo implode("\n", $output);
+			// echo "</pre>";
+			echo '<script>alert("Gagal");</script>';
+		}else{
+			echo '<script>alert("Berhasil");</script>';
 		}
 	}
 }
