@@ -39,7 +39,6 @@ class Welcome extends CI_Controller {
 		
 		// Decode JSON ke array PHP
 		$data = json_decode($output, true);
-		
 		$data = array(
 			'page'=>'ambil_antrian',
 			'link' => 'ambil_antrian',

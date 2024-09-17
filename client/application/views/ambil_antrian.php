@@ -20,7 +20,7 @@
                             </center>
 							<hr>
                             <center>
-							Meja <?$meja['nomor_meja']?>
+							Meja <?=$meja['nomor_meja']?>
                             </center>
                         </div>
                     </div>
