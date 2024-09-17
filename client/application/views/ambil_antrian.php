@@ -16,7 +16,7 @@
                         <div class="card-body">
                             <br>
                             <center>
-                                <a href="<?=base_url()?>welcome/cetak/<?=$meja['uuid_meja']?>" target="_blank" class="btn btn-info btn-lg" target="_blank">Ambil Antrian</a>
+                                <a href="<?=base_url()?>welcome/cetak/<?=$meja['uuid_meja']?>" class="btn btn-info btn-lg" target="_blank">Ambil Antrian</a>
                             </center>
 							<hr>
                             <center>

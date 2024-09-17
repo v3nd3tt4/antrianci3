@@ -80,7 +80,6 @@ class Welcome extends CI_Controller {
 		// Perintah untuk menjalankan script Python
 		$python_script = $this->config->item('python_script');
 		$python_path = $this->config->item('python_path');
-		var_dump($data);
 		$command = escapeshellcmd("$python_path \"$python_script\" \"$printer_name\" \"$nomor_antrian\" \"$nama_meja\"");
 
 
