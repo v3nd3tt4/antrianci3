@@ -47,6 +47,26 @@ class Api extends CI_Controller {
         }
         echo json_encode($result);
     }
+	
+	private function sendWebSocketData($nomor_antrian, $id_meja)
+    {
+        $socketData = [
+            'name' => $nomor_antrian,
+            'message' => 'belum dipanggil',
+            'id_meja' => $id_meja
+        ];
+
+        // Kirim data ke WebSocket server
+        // Anda perlu mengimplementasikan logika pengiriman data ke server WebSocket di sini
+        // Contoh menggunakan library cURL:
+        $ch = curl_init('http://192.168.56.130:3000/emit');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($socketData));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+        $response = curl_exec($ch);
+        curl_close($ch);
+    }
 
     public function cetakAntrian($uuid_meja){
         $meja = $this->db->get_where('tb_meja', array('uuid_meja'=>$uuid_meja));
@@ -76,23 +96,29 @@ class Api extends CI_Controller {
 
         $simpan = $this->db->insert('tb_data_antrian', $data_to_save);
         if(!$simpan){
-            $result = array(
-                'response' => 404,
-                'message' => 'data antrian tidak ditemukan',
-                'data' => ''
-            );
-        }else{
-            $data['nomor_antrian']=$meja->row()->kode_meja.$nomor_data_antrian;
-            $data['tanggal_data_antrian']=date('Y-m-d');
-            $data['id_meja'] = $meja->row()->id_meja;
-            $data['nama_meja'] = $meja->row()->keterangan_meja;
-            $result = array(
-                'response' => 200,
-                'message' => 'data antrian ditemukan',
-                'data' => $data
-            );
-        }
-        echo json_encode($result);
+			$result = array(
+				'response' => 404,
+				'message' => 'data antrian tidak ditemukan',
+				'data' => ''
+			);
+		} else {
+			$nomor_antrian = $meja->row()->kode_meja.$nomor_data_antrian;
+			$data['nomor_antrian'] = $nomor_antrian;
+			$data['tanggal_data_antrian'] = date('Y-m-d');
+			$data['id_meja'] = $meja->row()->id_meja;
+			$data['nama_meja'] = $meja->row()->keterangan_meja;
+			
+			// Kirim data ke WebSocket
+			$this->sendWebSocketData($nomor_antrian, $meja->row()->id_meja);
+
+			$result = array(
+				'response' => 200,
+				'message' => 'data antrian ditemukan',
+				'data' => $data
+			);
+		}
+
+		echo json_encode($result);
 
     }
 }

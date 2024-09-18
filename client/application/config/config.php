@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['base_url'] = 'http://localhost/antrianci3/client/';
 
 //setting 
-$config['base_url_api'] = 'http://192.168.76.130/antrianptbjm/';
+$config['base_url_api'] = 'http://192.168.56.130/antrianci3/server/';
 $config['printer_name'] = 'POS-58';
 
 // Perintah untuk menjalankan script Python

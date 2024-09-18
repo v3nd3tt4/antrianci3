@@ -2,7 +2,7 @@
 <script src="<?=base_url()?>assets/socket.io.min.js"></script>
 <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 <script>
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('http://192.168.56.130:3000');
 var isSoundPlaying = false;
 
 function updateSuccess(id_meja, nomor_antrian_aktif) {
