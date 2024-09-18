@@ -26,6 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['base_url'] = 'http://localhost/antrianci3/client/';
 
 //setting 
+
 $config['base_url_api'] = 'http://192.168.76.130/antrianptbjm/';
 $config['printer_name'] = 'POS-58';
 

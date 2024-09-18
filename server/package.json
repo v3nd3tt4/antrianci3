@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-thermal-printer": "^4.2.0",
+    "socket.io": "^4.6.1",
+    "text-to-speech-js": "^1.1.10"
+  }
+}
