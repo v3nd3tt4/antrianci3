@@ -37,6 +37,8 @@ Setelah ini ikuti langkah berikut ini:
 6. Buka browser silahkan akses base url yang sudah di setting sebelum nya, misal nya di sini http://localhost/server/
 7. Pastikan node js juga berjalan dengan baik
 
+##penting
+aplikasi pada folder client dan folder pos-printer-python wajib terinstall atau berada pada komputer yang terinstall driver printer thermal pos dan terpasang perangkat printer thermal pos
 
 ## 2. Client
 Aplikasi yang terdiri dari :
