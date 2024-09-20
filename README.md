@@ -20,6 +20,11 @@ Aplikasi ini terbagi menjadi 3 bagian
 2. Client
 3. Pos-Printer-Python
 
+## Catatan
+- Aplikasi pada folder server dan client harus berada dalam satu jaringan yang sama
+- Aplikasi pada folder server merupakan aplikasi untuk display antrian, panggil antrian, dan manajemen meja layanan dan manajemen user
+- Aplikasi pada folder client dan pos-printer-python merupakan aplikasi untuk ambil antrian dan cetak antrian yang harus ada di komputer yang terinstall printer thermal pos
+
 ## 1. Server
 
 Aplikasi yang terdiri dari :
