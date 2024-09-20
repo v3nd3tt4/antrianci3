@@ -42,6 +42,9 @@ aplikasi pada folder client dan folder pos-printer-python wajib terinstall atau 
 
 ## 2. Client
 Aplikasi yang terdiri dari :
+- [Codeigniter 3] 
+
+Setelah ini ikuti langkah berikut ini:
 1. Ubah base url pada file yang berada application/config/config.php, sesuaikan dengan base url yang anda inginkan, biasanya mengikuti nama folder 
 2. Silahkan ubah config di bawah ini yang berada application/config/config.php, sesuaikan dengan aplikasi anda
 3. Buka browser silahkan akses base url yang sudah di setting sebelum nya, misal nya di sini http://localhost/client/
