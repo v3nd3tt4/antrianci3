@@ -1,7 +1,7 @@
 <script src="<?=base_url()?>assets/socket.io.min.js"></script>
 <script>
 $(document).ready(function() {
-    var socket = io.connect('http://192.168.76.130:3000');
+    var socket = io.connect('http://localhost:3000');
     var isSoundPlaying = false;
 
     function updateButtonState() {

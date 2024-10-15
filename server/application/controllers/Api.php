@@ -59,7 +59,7 @@ class Api extends CI_Controller {
         // Kirim data ke WebSocket server
         // Anda perlu mengimplementasikan logika pengiriman data ke server WebSocket di sini
         // Contoh menggunakan library cURL:
-        $ch = curl_init('http://192.168.56.130:3000/emit');
+        $ch = curl_init('http://localhost:3000/emit');
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($socketData));

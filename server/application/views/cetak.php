@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
     <script>
-    var socket = io.connect('http://192.168.56.130:3000');
+    var socket = io.connect('http://localhost:3000');
     socket.emit('message', {
         name: '<?=$nomor_antrian?>',
         message: 'belum dipanggil',

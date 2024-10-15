@@ -72,5 +72,5 @@ io.sockets.on('connection', function(client) {
 });
 
 server.listen(3000, '0.0.0.0', () => {
-    console.log('Server is running on http://192.168.56.130:3000');
+    console.log('Server is running on http://localhost:3000');
 });
