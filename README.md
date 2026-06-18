@@ -68,6 +68,7 @@ $config['python_path'] = 'C:/Users/pilopa/AppData/Local/Programs/Python/Python31
 Dalam aplikasi ini untuk berkomunikasi dengan printer thermal pos, saya menggunakan python.
 Setelah ini ikuti langkah berikut ini:
 1. Buka terminal dalam folder pos-printer-python lakukan perintah `pip install pywin32`
+2. Pastikan Microsoft Visual C++ Redistributable sudah terinstall juga
 
 ## Screenshot
 
